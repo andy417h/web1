@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>月城旅館</title>
+    <meta name="description" content="歴史ある月城旅館。四季折々の温泉とお料理で特別な時間をお届けします。" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet" />
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header id="header" class="header">
+      <h1 class="header__logo">
+        <a href="index.html"><img src="img/logo.svg" alt="月城旅館" /></a>
+      </h1>
+
+      <div class="header__nav">
+        <nav class="gnav">
+          <ul class="gnav__list">
+            <li class="gnav__item"><a class="header__btn-link" href="#">ご予約はこちら </a></li>
+            <li class="gnav__item"><a class="gnav__link" href="#about">当館について</a></li>
+            <li class="gnav__item"><a class="gnav__link" href="#spa">温泉</a></li>
+            <li class="gnav__item"><a class="gnav__link" href="#room">お部屋</a></li>
+            <li class="gnav__item"><a class="gnav__link" href="#food">お料理</a></li>
+            <li class="gnav__item"><a class="gnav__link" href="#facilities">館内施設</a></li>
+            <li class="gnav__item"><a class="gnav__link" href="#access">アクセス</a></li>
+          </ul>
+          <ul class="gnav__list">
+            <li class="gnav__item"><a class="gnav__link" href="https://twitter.com/" target="_blank">twitter</a></li>
+            <li class="gnav__item"><a class="gnav__link" href="https://www.facebook.com/" target="_blank">facebook</a></li>
+            <li class="gnav__item"><a class="gnav__link" href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div id="mask"></div>
+    </header>
+
+    <div class="container">
+      <div class="main">
+        <div class="background-video">
+          <video autoplay muted loop>
+            <source src="video.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="slideBox">
+          <img class="item1" src="img/item1.jpg" alt="月城旅館の外観" />
+          <img class="item1" src="img/item2.jpg" alt="月城旅館の入り口" />
+          <img class="item1" src="img/item3.jpg" alt="月城旅館の温泉の湯" />
+        </div>
+
+        <section class="about" id="about">
+          <div class="wrapper">
+            <div class="about__body">
+              <div class="about__items">
+                <div class="about__item">
+                  <h2 class="sec-title">歴史</h2>
+                  <p class="sec-text">
+                    月城の湯は、古くから“月見の湯”として人々に親しまれてきました。<br />
+                    開湯は江戸の頃、満月の夜に湯けむりが白く輝いたことから<br class="pc-br" />
+                    この地に宿を構え、月を望む旅人を迎えるようになりました。<br />
+                    時を経た今も、その光と湯のぬくもりは変わらず息づいております。
+                  </p>
+                </div>
+                <div class="about__item">
+                  <h2 class="sec-title">おもてなし</h2>
+                  <p class="sec-text">
+                    ぬくもりに包まれながら、心までほどけるひとときを。<br />
+                    私たちは、一人ひとりのお客様に寄り添い、<br class="pc-br" />
+                    真心を込めた おもてなしでお迎えいたします。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="about__gallery">
+            <picture>
+              <source srcset="img/sp-about_gallaery.jpg" media="(max-width: 960px)" />
+              <img src="img/about_gallery.jpg" alt="街並みの風景" />
+            </picture>
+          </div>
+        </section>
+
+        <section class="spa" id="spa">
+          <div class="wrapper">
+            <div class="spa__body">
+              <h2 class="sec-title">温泉</h2>
+              <p class="sec-text">
+                月城の湯は、およそ千三百年前に山あいの霧の中から湧き出たと伝えられています。<br />
+                満月の夜、湯けむりが白く光を返したことから“月見の湯”と呼ばれ、旅人や僧侶の<br class="pc-br" />
+                癒しの地として親しまれてきました。古より疲れを癒し、心を鎮める霊泉として<br class="pc-br" />
+                知られ今もなおその湯は変わらずやわらかく、人々の身と心をあたためています。
+              </p>
+              <div class="spa__btn-area">
+                <div class="spa__btn btn">
+                  <a class="btn-link" href="#">詳しく見る<i class="fas fa-angle-right"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="spa__circle">
+              <ul class="spa__circle-item">
+                <li class="spa__circle-items">
+                  <a class="spa__circle-title" href="#">宵月の湯</a>
+                  <p class="spa__circle-text">月を仰ぎながら、時の流れを忘れる宵月の湯</p>
+                </li>
+                <li class="spa__circle-items">
+                  <a class="spa__circle-title" href="#">満月の湯</a>
+                  <p class="spa__circle-text">星空と月を一面に映す、満天の露天風呂</p>
+                </li>
+                <li class="spa__circle-items">
+                  <a class="spa__circle-title" href="#">新月の湯</a>
+                  <p class="spa__circle-text">朝霧の中で光を受けた、湯けむりがきらめく内湯</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="spa__gallery">
+            <!-- メイン -->
+            <picture class="spa__gallery-main">
+              <source srcset="img/sp-spa_main.jpg" media="(max-width: 960px)" />
+              <img src="img/spa_main.jpg" alt="月城旅館の露天風呂" />
+            </picture>
+
+            <!-- ギャラリー1 -->
+            <picture class="spa__gallery-1">
+              <source srcset="img/sp-spa_1.jpg" media="(max-width: 960px)" />
+              <img src="img/spa_1.jpg" alt="月城旅館の宵月の湯" />
+            </picture>
+
+            <!-- ギャラリー2 -->
+            <picture class="spa__gallery-2">
+              <source srcset="img/sp-spa_2.jpg" media="(max-width: 960px)" />
+              <img src="img/spa_2.jpg" alt="月城旅館の満月の湯" />
+            </picture>
+
+            <!-- ギャラリー3 -->
+            <picture class="spa__gallery-3">
+              <source srcset="img/sp-spa_3.jpg" media="(max-width: 960px)" />
+              <img src="img/spa_3.jpg" alt="月城旅館の新月の湯" />
+            </picture>
+          </div>
+        </section>
+
+        <div class="wrapper">
+          <section class="room" id="room">
+            <div class="room__body">
+              <div class="room__img">
+                <img src="img/room.jpg" alt="月城旅館の客室" />
+              </div>
+              <div class="room__aside">
+                <h2 class="sec-title">お部屋</h2>
+                <h3 class="sec-subtitle">365日、月と過ごす特別なひととき。</h3>
+                <div class="sec-text">
+                  月城温泉では、趣の異なる三つの客室をご用意しております。<br />
+                  満月、宵月、新月——それぞれの夜に映る月の姿が異なり、<br />
+                  訪れるたびに違う景色と静けさをお愉しみいただけます。<br />
+                  季節や時間によって変わる光と影が、<br />まるで月と対話するようなひとときを演出します。
+                </div>
+                <div class="room__btn-area">
+                  <div class="room__btn btn">
+                    <a class="btn-link" href="#">詳しく見る<i class="fas fa-angle-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <section class="food" id="food">
+          <div class="food__body">
+            <h2 class="sec-title">お料理</h2>
+            <div class="sec-text">
+              四季折々の旬を映す月城の膳は、手間を惜しまず仕上げた豊かな味わい。<br />
+              心と体がゆるやかにほどける、やさしい時間をお愉しみください。
+            </div>
+          </div>
+        </section>
+
+        <div class="slider-wrapper">
+          <ul class="slider">
+            <li class="slide">
+              <img src="img/food1.jpg" alt="月城旅館の懐石料理" />
+            </li>
+            <li class="slide">
+              <img src="img/food2.jpg" alt="月城旅館の朝食料理" />
+            </li>
+            <li class="slide">
+              <img src="img/food3.jpg" alt="月城旅館の懐石料理" />
+            </li>
+            <li class="slide">
+              <img src="img/food4.jpg" alt="月城旅館の懐石料理" />
+            </li>
+            <li class="slide">
+              <img src="img/food5.jpg" alt="月城旅館の日帰りプラン昼食料理" />
+            </li>
+          </ul>
+          <ul class="slider">
+            <li class="slide">
+              <img src="img/food1.jpg" alt="月城旅館の懐石料理" />
+            </li>
+            <li class="slide">
+              <img src="img/food2.jpg" alt="月城旅館の朝食料理" />
+            </li>
+            <li class="slide">
+              <img src="img/food3.jpg" alt="月城旅館の懐石料理" />
+            </li>
+            <li class="slide">
+              <img src="img/food4.jpg" alt="月城旅館の懐石料理" />
+            </li>
+            <li class="slide">
+              <img src="img/food5.jpg" alt="月城旅館の日帰りプラン昼食料理" />
+            </li>
+          </ul>
+        </div>
+
+        <section class="facilities" id="facilities">
+          <div class="wrapper">
+            <div class="facilities__body">
+              <div class="facilities-img">
+                <img src="img/facilities_1.jpg" alt="月城旅館のお客様専用テラス" />
+              </div>
+              <div class="facilities__ashide">
+                <h2 class="sec-title">館内施設</h2>
+                <h3 class="sec-subtitle">心安らぐ滞在のひととき</h3>
+                <div class="sec-text">
+                  ラウンジや月を眺めながら楽しめる屋外プールがございます。<br />
+                  滞在の時間によって表情を変える施設のひとつひとつが、<br />
+                  訪れるたびに違う楽しみとくつろぎをもたらします。<br />
+                  静かな時間の中で、思い思いのひとときをお過ごしください。<br />
+                  心ゆたかな滞在が、皆さまをお迎えいたします。
+                </div>
+                <div class="facilities__btn-area">
+                  <div class="facilities__btn btn">
+                    <a class="btn-link" href="#">詳しく見る<i class="fas fa-angle-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="access" id="access">
+          <div class="access__body">
+            <h2 class="sec-title">アクセス</h2>
+            <div class="sec-text">
+              静かな山あいに佇む月城温泉までは、都心からおよそ二時間。<br />
+              皆さまを温かくお迎えいたします。ご不明点は、お気軽にご連絡ください。
+            </div>
+            <div class="access__contact">
+              <div class="access__address">住所：〒123-4567 □□県○○市△△町1-2-3</div>
+              <div class="access__number">電話番号：123-456-7890<span class="access__number-fax">/ FAX：022-398-2242</span></div>
+            </div>
+            <div class="access__map">
+              <iframe title="月城旅館までのアクセスマップ" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1107.621854014076!2d140.88153729159202!3d38.26030207314127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8a28180c510b87%3A0xb2a30b91be1ffdbc!2z5LuZ5Y-w6aeF!5e0!3m2!1sja!2sjp!4v1762961493692!5m2!1sja!2sjp"></iframe>
+            </div>
+
+            <div class="access__btn-area">
+              <div class="access__btn btn">
+                <a class="btn-link" href="#">当館までのアクセス<i class="fas fa-angle-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <footer class="footer" id="footer">
+        <nav class="footer__gnav">
+          <ul class="footer__list">
+            <li class="footer__item"><a href="#about">当館について</a></li>
+            <li class="footer__item"><a href="#spa">温泉</a></li>
+            <li class="footer__item"><a href="#room">お部屋</a></li>
+            <li class="footer__item"><a href="#food">お料理</a></li>
+            <li class="footer__item"><a href="#facilities">館内施設</a></li>
+            <li class="footer__item"><a href="#access">アクセス</a></li>
+          </ul>
+          <p class="copyright">Copyright &copy; 2025 Tsukishiro Ryokan All Rights Reserved.</p>
+        </nav>
+        <a id="to-top" href="#"></a>
+      </footer>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
